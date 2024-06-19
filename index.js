@@ -1,66 +1,46 @@
-// JavaScript Variabel
-// let first_name = "John"; //Snake Case
-// let FirstName = "John"; //Pascal Case
-// let firstName = "John"; //Camel Case
+// LIFE & Callcback Function
 
-//Tipe data
-// const firstName = "John"; //String
-// let age = 30; //Number
-// let isMarried = true; //Boolean
+//BMI = berat / tinggi * tinggi)
+fucntion calculateBMI()
+    let bmi = berat / (tinggi * tinggi)
+    let classification;
+    if (bmi < 18.5) {
+        classification =  'Underweight'
+    }else if (bmi < 18.5 && bmi < 24.9){
+        classification =  'Normal Range'
+    }else if(bmi >= 25) {
+        classification = 'Overweight'
+    }else if(bmi >= 25 && bmi <= 29.9){
+    classification = 'Obese'
+    }
+    return classification //mengembalikan nilai
 
-// console.log(firstName, age, isMarried);
-// let address;
-// console.log(address); //undefined
-// address = "Airmadidi";
-// console.log(address);
-// //const nilainya tidak dirubah
-// firstName = "Doe";
+let output = calculateBMI(55, 1.7) //nilai retrun akan diletakan disini
+console.log('BMI anda adalah' + output) //memanggil variabel output untuk mengeluarkan hasil
 
-//Javascript Operators
-//Aritmethic
-// let bil1 = 10;
-// let bil2 = 3;
-// console.log(bil1 + bil2); //13
-// console.log(bil1 - bil2); //7
-// console.log(bil1 * bil2); //30
-// console.log(bil1 / bil2); //3.33
-// console.log(bil1 ** bil2); //1000
-// console.log(bil1 % bil2); //1
-// console.log(bil1);
-// bil1++;
-// console.log(bil1); //11
-// bil1--;
-// console.log(bil1); //10
 
-//Assignment
-// let x = 10;
-// // x = x + 2;
-// x += 2;
-// console.log(x);
+// IIFE & Callback Function
 
-//String Operators
-// let firstName = "John";
-// let lastName = "Doe";
-// console.log(firstName + " " + lastName);
+//BMI = berat / (tinggi * tinggi)
+// function calculateBMI(berat, tinggi){
+//     let bmi = berat / (tinggi * tinggi)
+//     let classification;
+//     if (bmi < 18.5) {
+//         classification = 'Underweight'
+//     } else if(bmi >= 18.5 && bmi < 24.9){
+//         classification = 'Normal Range'
+//     } else if (bmi >= 25){
+//         classification = 'Overweight'
+//     } else if (bmi > 25 && bmi <= 29.9){
+//         classification = 'Pre obese'
+//     } else {
+//         classification = 'Obese'
+//     }
+//     return classification
+// }
 
-//Equality Operators
-// let x = 10;
-// let y = "10";
+// let output = calculateBMI(90, 1.7)
+// console.log('Clasifikasi BMI anda adalah ' + output)
 
-// console.log(x == y); //true
-// console.log(x === y); //false
 
-//JavaScript Function
-//Cara 1
-function greetings(name) {
-    let string = "Hello" + name;
-    return string;
-  }
-  //Cara 2
-  const greetings2 = function () {
-    console.log("Hello World2");
-  };
-  
-  let output = greetings("John");
-  console.log(output);
-  greetings2();
+ccc
